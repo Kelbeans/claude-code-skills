@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/code_enforcer/load_rules.js",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
